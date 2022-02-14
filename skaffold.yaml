@@ -6,7 +6,12 @@ build:
       context: deployment
   googleCloudBuild:
     projectId: devops-labs-322408
-    dockerImage: gcr.io/devops-labs-322408/for-cb
 deploy:
   kubectl:
-    manifests: ./kubernetes/*.yaml
+    manifests:
+      - kubernetes/*
+portForward:
+  - resourceType: deployment
+    resourceName: for-cb
+    port: 8080
+    localPort: 80
