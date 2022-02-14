@@ -6,6 +6,7 @@ build:
       context: deployment
   googleCloudBuild:
     projectId: devops-labs-322408
+    dockerImage: gcr.io/devops-labs-322408/for-cb
 deploy:
   docker:
       dockerfile: "Dockerfile"
