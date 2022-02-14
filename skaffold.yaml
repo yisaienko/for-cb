@@ -7,6 +7,5 @@ build:
   googleCloudBuild:
     projectId: devops-labs-322408
 deploy:
-  kubectl:
-    manifests:
-      - for-cb/*
+  docker:
+      dockerfile: "Dockerfile"
