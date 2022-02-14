@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: for-cb
+  name: 1st-app
   namespace: deployment
   labels:
-    app: for-cb
+    app: 1st-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: for-cb
+      app: 1st-app
   template:
     metadata:
       labels:
-        app: for-cb
+        app: 1st-app
     spec:
       containers:
-        - name: for-cb
-          image: for-cb
+        - name: 1st-app
+          image: 1st-app
           ports:
             - containerPort: 8080

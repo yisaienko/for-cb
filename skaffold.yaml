@@ -2,7 +2,7 @@ apiVersion: skaffold/v2beta7
 kind: Config
 build:
   artifacts:
-    - image: for-cb
+    - image: 1st-app
       context: deployment
   googleCloudBuild:
     projectId: devops-labs-322408
@@ -12,6 +12,6 @@ deploy:
       - kubernetes/*
 portForward:
   - resourceType: deployment
-    resourceName: for-cb
+    resourceName: 1st-app
     port: 8080
     localPort: 80
