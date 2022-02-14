@@ -13,5 +13,5 @@ deploy:
 portForward:
   - resourceType: service
     resourceName: for-cb
-    port: 8080
+    port: 80
     localPort: 80
