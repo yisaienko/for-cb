@@ -9,5 +9,6 @@ RUN apk update \
 	
 COPY ./*.html /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY targets.json /var/http/
 
 CMD ["nginx", "-g", "daemon off;"]
