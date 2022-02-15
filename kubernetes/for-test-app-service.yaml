@@ -7,7 +7,7 @@ spec:
   selector:
     app: for-test-app
   ports:
-    port: 80
+  - port: 80
     protocol: TCP
     targetPort: 80
   externalTrafficPolicy: Cluster
