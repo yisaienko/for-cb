@@ -1,6 +1,6 @@
 FROM alpine:3.14
 
-LABEL maintainer="3123123"
+LABEL maintainer="for-test-app"
 
 RUN apk update \
 	&& apk upgrade \
